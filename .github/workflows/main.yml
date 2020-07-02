@@ -1,9 +1,10 @@
 name: Main
-  on:
-    push: { branches: [master] }
-  
-  env:
-    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+on:
+  push: { branches: [master] }
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
   
 jobs:
   build:
